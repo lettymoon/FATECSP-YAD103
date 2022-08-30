@@ -1,4 +1,4 @@
-# FATECSP-YAD103
+# FATECIP-YAD103
 
 Matemática Discreta
 
