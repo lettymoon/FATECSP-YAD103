@@ -1,3 +1,11 @@
+!Matematica Discreta 
+!Data: 05/09/22
+!Lista 01 Laboratorio de fortran 
+!Calculos proposicionais
+!Aluno: Leticia Helena Candido
+!Turma: ADS, vespertino
+
+
 program logp1ex2
 
 implicit none
