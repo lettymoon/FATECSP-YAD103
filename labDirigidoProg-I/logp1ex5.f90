@@ -1,4 +1,4 @@
-program logp1ex1
+program logp1ex5
 
 implicit none
 
@@ -10,21 +10,21 @@ a = .true.
 b = .true.
 
 !calculos proposicionais:
-S = .not.((a.and.b).and..not.(a.or.b))
+S = (.not.a.and.b).or.(.not.a.and..not.b)
 
 !saida de dados para tela:
 write(*,*)'Valor logico das proporsicoes simples'
-write(*,*)'a = ', a, 'b = ', b
+write(*,*)'a = ',a, 'b = ',b
 write(*,*)'Valor logico da proposicao composta'
-write(*,*)'S = ~((a ^ b) ^ ~(a v b)) = ', S
+write(*,*)'S = (~a ^ b) v (~a ^ ~b) = ', S
 
 !saida de dados para arquivo:
-open(10, file='ex1.dat', status='replace') !abertura de arquivo teste.dat
+open(10, file='ex5.dat', status='replace') !abertura de arquivo teste.dat
     write(10,*)'Valor logico das proposicoes simples'
-    write(10,*)'a = ', a, 'b = ', b
+    write(10,*)'a = ',a, 'b = ',b
     write(10,*)'Valor logico da proposicao composta'
-    write(10,*)'S = ~((a ^ b) ^ ~(a v b)) = ', S
+    write(10,*)'S = (~a ^ b) v (~a ^ ~b) = ', S
 close(10) !fechamento do arquivo de saida
 
 !finalizacao do programa:
-end program logp1ex1
+end program logp1ex5

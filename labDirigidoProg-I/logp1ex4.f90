@@ -1,30 +1,31 @@
-program logp1ex1
+program logp1ex4
 
 implicit none
 
 !declaracao de variaveis:
-logical :: a,b,S
+logical :: a,b,c,S
 
 !inicializacao das variaveis:
 a = .true.
 b = .true.
+c = .false.
 
 !calculos proposicionais:
-S = .not.((a.and.b).and..not.(a.or.b))
+S = .not.(a.and.b).or.c
 
 !saida de dados para tela:
 write(*,*)'Valor logico das proporsicoes simples'
-write(*,*)'a = ', a, 'b = ', b
+write(*,*)'a = ',a, 'b = ',b, 'c = ',c
 write(*,*)'Valor logico da proposicao composta'
-write(*,*)'S = ~((a ^ b) ^ ~(a v b)) = ', S
+write(*,*)'S = ~(a ^ b) v c = ', S
 
 !saida de dados para arquivo:
-open(10, file='ex1.dat', status='replace') !abertura de arquivo teste.dat
+open(10, file='ex4.dat', status='replace') !abertura de arquivo teste.dat
     write(10,*)'Valor logico das proposicoes simples'
-    write(10,*)'a = ', a, 'b = ', b
+    write(10,*)'a = ',a, 'b = ',b, 'c = ',c
     write(10,*)'Valor logico da proposicao composta'
-    write(10,*)'S = ~((a ^ b) ^ ~(a v b)) = ', S
+    write(10,*)'S = ~(a ^ b) v c = ', S
 close(10) !fechamento do arquivo de saida
 
 !finalizacao do programa:
-end program logp1ex1
+end program logp1ex4
