@@ -1,7 +1,7 @@
 !Matemática Discreta
 !Lista 02 Laboratório de Fortran
 !Objetivo: Construção de tabela verdade com 3 variaveis
-!Data: 20/09/22
+!Data: 08/09/22
 !Aluno: Letícia Helena Cândido
 !Turma: ADS, Vespertino
 
