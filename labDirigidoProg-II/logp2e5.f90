@@ -23,7 +23,7 @@ write(*,*)'|    a    |    b    |    S    |'
 write(*,*)'-------------------------------'
 
 !abertura de arquivos
-open (10, file='e1.dat', status='replace')
+open (10, file='e5.dat', status='replace')
 
 !bloco de saída do cabeçalho da tabela verdade para o arquivo
 write(10,*)'-------------------------------'
